@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title id="pageTitle">Brown Scan - السلسلة</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Brown Scan</a>
+    <nav class="nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="series.html">قائمة المانغا</a>
+      <a href="admin.html">لوحة المشرف</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap series">
+  <div class="series-head">
+    <img id="cover" class="cover" alt="غلاف السلسلة">
+    <div class="info">
+      <h1 id="title">عنوان السلسلة</h1>
+      <div class="tax">
+        <div>النوع: <span id="genres"></span></div>
+        <div>الحالة: <span id="stat"></span></div>
+        <div>اللغة/النوع: <span id="lng"></span></div>
+      </div>
+      <p id="desc" class="desc"></p>
+      <button id="favBtn" class="btn">إضافة إلى المفضلة</button>
+      <a id="readBtn" class="btn" href="#">ابدأ القراءة</a>
+    </div>
+  </div>
+
+  <section id="chapters" class="chapters">
+    <h2>قائمة الفصول</h2>
+    <ul id="chapList" class="chapter-list"></ul>
+  </section>
+</main>
+
+<script src="assets/js/app.js"></script>
+<script>App.initSeriesDetail();</script>
+</body>
+</html>

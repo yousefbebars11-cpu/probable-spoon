@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Brown Scan - قائمة المانغا</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Brown Scan</a>
+    <nav class="nav">
+      <a href="index.html">الرئيسية</a>
+      <a class="active" href="series.html">قائمة المانغا</a>
+      <a href="teams.html">الفرق</a>
+      <a href="news.html">الأخبار</a>
+      <a href="membership.html">العضويات المميزة</a>
+      <a href="friends.html">المواقع الصديقة</a>
+      <a href="admin.html">لوحة المشرف</a>
+    </nav>
+    <div class="auth">
+      <a href="login.html" id="loginLink">دخول</a>
+      <a href="register.html" id="registerLink">حساب جديد</a>
+      <span id="userBadge" class="badge hidden"></span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>قائمة المانغا</h1>
+  <form id="filters" class="filters">
+    <input type="search" id="q" placeholder="بحث عن سلسلة...">
+    <select id="genre">
+      <option value="">النوع</option>
+    </select>
+    <select id="status">
+      <option value="">الحالة</option>
+      <option value="ongoing">مستمرة</option>
+      <option value="completed">مكتملة</option>
+      <option value="hiatus">متوقفة</option>
+    </select>
+    <select id="lang">
+      <option value="">النوع/اللغة</option>
+      <option value="kr">مانهوا كورية</option>
+      <option value="cn">مانها صينية</option>
+      <option value="jp">مانجا يابانية</option>
+    </select>
+    <button type="button" id="apply">تصفية</button>
+    <button type="button" id="reset">إعادة ضبط</button>
+  </form>
+
+  <div id="seriesGrid" class="grid"></div>
+  <div id="pager" class="pager"></div>
+</main>
+
+<script src="assets/js/app.js"></script>
+<script>App.initSeries();</script>
+</body>
+</html>

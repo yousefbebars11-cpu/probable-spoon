@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Brown Scan - القارئ</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="reader">
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">Brown Scan</a>
+    <nav class="nav">
+      <a id="seriesLink" href="series.html">عودة للسلسلة</a>
+      <a href="admin.html">لوحة المشرف</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <nav class="chapter-nav">
+    <a id="prevChap" class="btn secondary" href="#">السابق</a>
+    <div class="center">
+      <select id="chapterSelect"></select>
+    </div>
+    <a id="nextChap" class="btn secondary" href="#">التالي</a>
+  </nav>
+
+  <article id="pages" class="pages"></article>
+</main>
+
+<script src="assets/js/app.js"></script>
+<script>App.initReader();</script>
+</body>
+</html>
